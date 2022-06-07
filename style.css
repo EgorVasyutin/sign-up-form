@@ -154,22 +154,30 @@ body {
 }
 
 .prefix__select {
-    border: 1px solid #E2E4E5;
+    border-bottom: 1px solid #E2E4E5;
+    border-left: none;
+    border-top: none;
+    border-right: none;
     padding: 16px 8px;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
+    outline: none;
 }
 
 .form__num--input {
     font-family: 'Roboto-reg', serif;
-    border: 1px solid #E2E4E5;
+    border-bottom: 1px solid #E2E4E5;
+    border-left: none;
+    border-top: none;
+    border-right: none;
     padding-left: 16px;
     width: 280px;
     margin-right: 32px;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
+    outline: none;
 }
 
 .form__button {
