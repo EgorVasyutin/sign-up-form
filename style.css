@@ -22,6 +22,10 @@
     font-family: Roboto-reg;
     src: url("fonts/Roboto-Regular.ttf");
 }
+@font-face {
+    font-family: Roboto-med;
+    src: url("fonts/Roboto-Medium.ttf");
+}
 
 body {
     display: flex;
@@ -134,18 +138,18 @@ body {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    gap: 32px;
 }
 
 .num__text {
     font-family: 'Poppins-reg', serif;
     padding: 32px 0 0 32px;
+    margin-bottom: 32px;
 }
 
 .form__num--label {
     display: flex;
     gap: 16px;
-    padding-bottom: 32px;
+    padding-bottom: 16px;
 }
 
 .prefix {
@@ -179,7 +183,18 @@ body {
     line-height: 28px;
     outline: none;
 }
-
+/*.form__num--input:focus{*/
+/*    border-bottom:1px solid #007AFF;*/
+/*}*/
+.text__error {
+    font-family: 'Poppins-reg', serif;
+    font-size: 12px;
+    display: none;
+    align-items: center;
+    color: red;
+    margin-bottom: 12px;
+    padding-left: 32px;
+}
 .form__button {
     font-family: 'Poppins-med', serif;
     margin-top: 32px;
@@ -188,4 +203,77 @@ body {
     padding: 12px 24px;
     background-color: #FFFFFF;
     cursor: pointer;
+}
+
+.form__code {
+    display: flex;
+    gap: 32px;
+}
+
+.input__code {
+    font-family: 'Roboto-reg', serif;
+    border-bottom: 1px solid #E2E4E5;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    padding-left: 16px;
+    width: 280px;
+    margin-right: 32px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+.button_code {
+    font-family: 'Roboto-med', serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #007AFF;
+    cursor: pointer;
+}
+
+.form__input--text {
+    font-family: 'Poppins-reg', serif;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: #575F6E;
+    margin-bottom: 32px;
+}
+
+.text-code {
+    font-family: 'Poppins-reg', serif;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    color: #242426;
+}
+
+.submit__code {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+    gap: 8px;
+    width: 106px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #BBBFC1;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto-med', serif;
+    color: #242731;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.content__step-2 {
+    margin-top: 32px;
+    display: none;
 }
