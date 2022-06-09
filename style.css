@@ -31,6 +31,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
 }
 
 .hat {
@@ -183,9 +184,7 @@ body {
     line-height: 28px;
     outline: none;
 }
-/*.form__num--input:focus{*/
-/*    border-bottom:1px solid #007AFF;*/
-/*}*/
+
 .text__error {
     font-family: 'Poppins-reg', serif;
     font-size: 12px;
@@ -207,7 +206,6 @@ body {
 
 .form__code {
     display: flex;
-    gap: 32px;
 }
 
 .input__code {
@@ -218,12 +216,12 @@ body {
     border-right: none;
     padding-left: 16px;
     width: 280px;
+    height: 44px;
     margin-right: 32px;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     outline: none;
-    margin-bottom: 8px;
 }
 
 .button_code {
@@ -252,6 +250,7 @@ body {
     display: flex;
     align-items: center;
     color: #242426;
+    margin-bottom: 8px;
 }
 
 .submit__code {
@@ -274,6 +273,37 @@ body {
 }
 
 .content__step-2 {
-    margin-top: 32px;
     display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.number {
+    font-family: 'Roboto-reg', serif;
+    color: #242426;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 16px 4px 4px 16px;
+}
+
+.text__number {
+    font-family: 'Poppins-reg', serif;
+    display: inline;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-left: 16px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #575F6E;
+}
+
+.number__container {
+    display: none;
+    gap: 210px;
+}
+
+.number__container img {
+    margin-bottom: 16px;
+    margin-right: 16px;
 }
