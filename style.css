@@ -279,6 +279,13 @@ body {
     margin-top: 32px;
 }
 
+.number__flag {
+    padding-left: 16px;
+    display: none;
+    margin-bottom: 16px;
+
+}
+
 .number {
     font-family: 'Roboto-reg', serif;
     color: #242426;
@@ -296,14 +303,86 @@ body {
     font-size: 13px;
     line-height: 18px;
     color: #575F6E;
+    padding-right: 210px;
 }
 
 .number__container {
     display: none;
-    gap: 210px;
 }
 
-.number__container img {
+.number__pen{
     margin-bottom: 16px;
     margin-right: 16px;
+}
+
+.text__email{
+    font-family: 'Poppins-reg', serif;
+    padding: 32px 0 8px 32px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.content__step-3{
+    display: none;
+    margin-top: 32px;
+}
+
+.form__step-3--input{
+    margin-left: 32px;
+    font-family: 'Roboto-reg', serif;
+    border-bottom: 1px solid #E2E4E5;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    width: 350px;
+    margin-right: 32px;
+    padding-left: 16px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+.form__step-3{
+    border: 1px solid #E2E4E5;
+    border-radius: 8px;
+    padding-bottom: 32px;
+}
+
+
+
+
+
+.check_password {
+    display: none;
+    gap: 4px;
+    padding-left: 32px;
+    padding-top: 8px;
+    align-items: center;
+}
+
+.password__text {
+    font-family: 'Poppins-reg', serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #34C759;
+}
+
+.button__register {
+    font-family: 'Poppins-med', serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 32px;
+    background-color: #007AFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 32px;
+}
+
+.img__flag--green {
+    display: none;
 }
