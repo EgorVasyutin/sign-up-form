@@ -1,0 +1,23 @@
+{
+  "name": "forms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EgorVasyutin/sign-up-form.git"
+  },
+  "author": "Egor Vasyutin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EgorVasyutin/sign-up-form/issues"
+  },
+  "homepage": "https://github.com/EgorVasyutin/sign-up-form#readme",
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "prettier": "^2.6.2"
+  }
+}
