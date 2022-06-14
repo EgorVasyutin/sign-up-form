@@ -1,3 +1,5 @@
+/* TODO: вынести в отдельный файл */
+/* TODO: переменные (цвета) */
 @font-face {
   font-family: Raleway;
   src: url('./assets/fonts/Raleway-Bold.ttf');
@@ -84,7 +86,7 @@ body {
 
 .content {
   margin-top: 80px;
-  display: flex;
+  display: none; /* flex */
   justify-content: space-between;
   flex-direction: column;
   gap: 16px;
@@ -320,14 +322,44 @@ body {
 }
 
 .content__step-3 {
-  display: none;
+  display: flex;
   margin-top: 32px;
 }
 
-.form__step-3--input {
+.form-3 {}
+
+.form-3__body {
+  border: 1px solid #e2e4e5;
+  border-radius: 8px;
+  padding-bottom: 32px;
+}
+
+.form-3__field {}
+
+.form-3__field.invalid .form-3-field__input {
+  border-bottom: 1px solid red;
+}
+.form-3__field.invalid .form-3-field-hint__text {
+  color: red;
+}
+
+
+.form-3-field__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-3-field__label-text {
+  font-family: 'Poppins-reg', serif;
+  padding: 32px 0 8px 32px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.form-3-field__input {
   margin-left: 32px;
   font-family: 'Roboto-reg', serif;
-  border-bottom: 1px solid #e2e4e5;
+  border-bottom: 1px solid #E2E4E5;
   border-left: none;
   border-top: none;
   border-right: none;
@@ -341,28 +373,28 @@ body {
   margin-bottom: 8px;
 }
 
-.form__step-3 {
-  border: 1px solid #e2e4e5;
-  border-radius: 8px;
-  padding-bottom: 32px;
-}
+.form-3-field__hint {}
 
-.check_password {
+.form-3-field-hint {
   display: none;
+  align-items: center;
   gap: 4px;
   padding-left: 32px;
   padding-top: 8px;
-  align-items: center;
 }
 
-.password__text {
+.form-3-field-hint__icon {
+  display: none;
+}
+
+.form-3-field-hint__text {
   font-family: 'Poppins-reg', serif;
   font-size: 12px;
   line-height: 16px;
   color: #34c759;
 }
 
-.button__register {
+.form-3__submit-button {
   font-family: 'Poppins-med', serif;
   font-weight: 500;
   font-size: 16px;
@@ -374,8 +406,4 @@ body {
   border-radius: 4px;
   cursor: pointer;
   margin-top: 32px;
-}
-
-.img__flag--green {
-  display: none;
 }

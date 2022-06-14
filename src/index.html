@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- TODO: переименовать в header -->
+    <!-- TODO: использовать семантические теги и атрибуты (<h1-6>, <p>, <img alt="...">, ...) -->
+    <!-- TODO: добавить иконку-переключалку для просмотра-скрытия пароля -->
+
     <div class="hat">
       <div class="logo">
         <div class="logo__img"><img src="./assets/img/Logo.svg" alt="logo" /></div>
@@ -22,8 +26,10 @@
         <img src="./assets/img/hat-close.svg" />
       </div>
     </div>
+
     <div class="content">
       <div class="content__text--header">Registration</div>
+
       <div class="content__text">
         Fill in the registration data. It will take a couple of minutes.<br />
         All you need is a phone number and e-mail
@@ -37,6 +43,7 @@
         </div>
         <div class="lock__close"><img src="./assets/img/lock-close.svg" alt="close" /></div>
       </div>
+
       <form>
         <div class="form__num">
           <div class="num__text">Enter your phone number</div>
@@ -67,6 +74,7 @@
         <button type="button" class="form__button">Send Code</button>
       </form>
     </div>
+
     <div class="content__step-2">
       <div class="text-code">Confirmation code</div>
       <form>
@@ -86,31 +94,16 @@
         <button class="submit__code" type="button">Confirm</button>
       </form>
     </div>
+
     <div class="content__step-3">
-      <form class="form__step-3">
-        <div class="text__email">Enter your email</div>
-        <label>
-          <input type="email" class="form__step-3--input email" />
-        </label>
-        <div class="text__email">Set a password</div>
-        <label>
-          <input type="" class="form__step-3--input password password-1" />
-        </label>
-        <div class="check_password">
-          <div class="img__flag--green"><img src="./assets/img/flag-green.svg" alt="flag" /></div>
-          <div class="password__text">Good password</div>
+      <form id="email-password-form" class="form-3">
+        <div class="form-3__body">
         </div>
-        <div class="text__email">Repeat password</div>
-        <label>
-          <input type="" class="form__step-3--input password password-2" />
-        </label>
-        <div class="check_password">
-          <div class="img__flag--green"><img src="./assets/img/flag-green.svg" alt="flag" /></div>
-          <div class="password__text">Good password</div>
-        </div>
+
+        <button type="submit" class="form-3__submit-button">Register now</button>
       </form>
-      <button type="button" class="button__register">Register now</button>
     </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
